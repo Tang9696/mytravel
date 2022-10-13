@@ -20,6 +20,16 @@
 <script src="js/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <link rel="stylesheet" type="text/css" href="css/component.css" /><!-- css for banner slider -->
 <script src="js/modernizr.custom.js"></script><!-- js required for banner slider -->
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <link rel="stylesheet" href="css/colorbox.css" /><!-- css for Gallery -->
 </head>
@@ -120,7 +130,7 @@
 					<div class="clearfix"></div>
 				</div>
 			</div>
-			<div id="map" style="width:400px;height:400px;background:grey">https://www.google.com/maps/place/Minsk/@53.8968939,27.55655,13.17z/data=!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972?hl=en</div>
+			<div id="map" style="width:900px;height:400px;background:grey">https://www.google.com/maps/place/Minsk/@53.8968939,27.55655,13.17z/data=!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972?hl=en</div>
 		</div>
 	<!-- //about-section -->	
 	
