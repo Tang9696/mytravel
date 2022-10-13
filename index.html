@@ -20,17 +20,6 @@
 <script src="js/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <link rel="stylesheet" type="text/css" href="css/component.css" /><!-- css for banner slider -->
 <script src="js/modernizr.custom.js"></script><!-- js required for banner slider -->
-<script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.12),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <link rel="stylesheet" href="css/colorbox.css" /><!-- css for Gallery -->
 </head>
 <!-- Google tag (gtag.js) -->
@@ -130,7 +119,18 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 					<div class="clearfix"></div>
 				</div>
 			</div>
-			<div id="map" style="width:900px;height:400px;background:grey"></div>
+			<div id="map" style="width:1200px;height:400px;background:grey"></div>
+			<script>
+			function myMap() {
+			var mapOptions = {
+			    center: new google.maps.LatLng(51.5, -0.12),
+			    zoom: 10,
+			    mapTypeId: google.maps.MapTypeId.HYBRID
+			}
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 		</div>
 	<!-- //about-section -->	
 	
