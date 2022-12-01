@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+.banner{width:100%;height:60px;margin:0px;border:solid 1px grid;position:absolute;}
+.banner img{display;block;}
+.arrow_left,.arrow_right{
+width:20px;
+height:20px;
+background:yellow;
+border:solid 1px red;
+padding:25px 20px;
+position:absolute;
+}
+.arrow_left{
+left:10px;top:100px}
+.arrow_right{
+right:10px;top:100px}
+
+	</style>
 <title>Home</title>     
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->         
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
@@ -31,6 +48,44 @@
   gtag('config', 'G-P5J288F858');
 </script>
 <body>
+	<div class="banner">
+	<a id="bannerlink" href="http://www.bsutest.ml/index.php/happy-kfc/">
+		<img id="banner1" src="images/banner2.png" width="100%">
+        </a>
+	<script language="javascript">
+ 
+var j=0;//图片索引
+var arr1=new Array();    //图片列表
+var arr2=new Array();
+
+arr1[0]="images/banner.png";
+arr1[1]="images/banner1.png";
+
+arr2[0]="https://xtx-12.herokuapp.com/index.html";
+arr2[1]="https://shopping-chn.herokuapp.com/index.html";
+
+function banner1()
+{
+    var photo1=document.getElementById("banner1");
+	var link=document.getElementById("bannerlink");
+    if (j==arr1.length-1) 
+    {
+        j=0;
+    }
+    else
+    {
+        j+=1;
+    }
+    photo1.src=arr1[j];    //直接定义图片
+	link.href=arr2[j]
+}
+ 
+//重新加载的时间
+setInterval("banner1()",2000);
+ 
+</script>
+	
+	</div>
 	<!-- slider -->
 	<div class="w3-slider">
 		<div id="boxgallery" class="boxgallery" data-effect="effect-1">
